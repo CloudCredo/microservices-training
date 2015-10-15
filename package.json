@@ -1,0 +1,10 @@
+{
+  "name": "microservices-training",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "npm install && reveal-md presentation/"
+  },
+  "dependencies": {
+    "reveal-md": "~> 0.0.20"
+  }
+}
