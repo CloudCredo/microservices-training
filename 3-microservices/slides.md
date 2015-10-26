@@ -10,11 +10,7 @@ This content is copyright of CloudCredo. © CloudCredo 2015. All rights reserved
 
 ----
 
-## What are monoliths?
-
-* Big applications which do lots of things
-* Typically not 12 Factor Apps
-* But having just one thing is simple, right?
+What are monoliths?
 
 Note: 
 Going to be talking a lot about microservices today
@@ -23,24 +19,26 @@ Before we do that let's talk about the other thing
 
 Monoliths are single apps which do lots of things
 
+Typically not 12 Factor Apps
+
 Getting negative press recently
 
 When a project is small, they're very easy to work with - just one thing 
 
 ----
 
-## What are microservices?
-
-* The building blocks of Cloud Native apps
-* *Small* services which do one thing, and do it well
-* Microservices *collaborate* to address your business requirements
-* Each microservice is a *12 Factor App*
-* Communicate using *standard protocols* (HTTP, message queues, ...)
+What are microservices?
 
 Note:
 Getting a lot of hype
 
-Tiny 12 Factor apps which collaborate
+Tiny 12 Factor apps which collaborate to address your business requirements
+
+*Small* services which do one thing, and do it well
+
+Communicate using *standard protocols* (HTTP, message queues, ...)
+
+Natural fit for the cloud
 
 People seem to think they're the solution to all our problems
 
@@ -56,14 +54,7 @@ Interesting properties fall out of the fact that these things are SMALL.
 
 ----
 
-## Advantages
-
-* Small, easy to understand
-* Easy to scale horizontally
-* Add new business features easily by adding new services
-* Disposable
-* Polyglot programming
-* Natural fit for the cloud
+Advantages
 
 Note:
 *Easy to understand*:
@@ -85,15 +76,7 @@ Easy for developers to understand a single service in its entirety.
 *Scaling*:
 Microservices are easy to scale
 
-How do we scale a monolith?
-
-Does lots of complex stuff
-
-Can probably scale up
-
-Hard to scale out
-
-Break up into components and scale them individually
+We'll talk more about scaling later on in the workshop
 
 
 *Disposable*:
@@ -121,10 +104,7 @@ But you can write each microservice in its own language
 
 ----
 
-## Disadvantages
-
-* Communicating across distributed processes
-* Individually simple, but *complex* to orchestrate
+Disadvantages
 
 Note:
 Communicating across distributed processes is hard
@@ -143,19 +123,14 @@ How can we make sense out of all the service interaction noise? (leads on to dis
 
 ----
 
-## Automate, automate, automate
-
-* Continuous integration
-* Continuous deployment
-* DevOps
-* Let a platform like Cloud Foundry help with heavy lifting
+Automate, automate, automate
 
 Note:
 Automate!
 
 Manual approaches are doomed to fail.
 
-Invest the time in automated testing, CI, CD
+Invest the time in automated testing, CI, CD, DevOps.
 
 All the way through to production.
 
@@ -167,7 +142,7 @@ With automation and a platform, things are more manageable
 
 ----
 
-## Beware Conway's Law
+Beware Conway's Law
 
 > organisations which design systems ... are constrained to produce designs which are copies of the communication structures of
 these organisations
@@ -189,13 +164,13 @@ Be wary of allowing your existing team or business boundaries dictate your archi
 
 ----
 
-## Conway's Law Examples
+Conway's Law Examples
 
-* Microservices Dev vs Ops
-* Microservices Dev vs DBAs
-* Microservices Dev vs Business
-* Microservices Dev team A vs Dev team B
-* Microservices Dev vs regulatory requirements
+* Dev vs Ops
+* Dev vs DBAs
+* Dev vs Business
+* Dev team A vs Dev team B
+* Dev vs regulatory requirements
 
 Note:
 Think of a big organisation - the 'Enterprise'
@@ -222,14 +197,14 @@ Work together to find mutually acceptable solutions
 
 ----
 
-## Smash barriers before smashing monoliths!
+Smash barriers before smashing monoliths!
 
 Note:
 If your organisation is not ready for microservices, microservices will make things *worse*
 
 ----
 
-## Decomposition
+Decomposition
 
 Note:
 So now that we've smashed all our barriers...
@@ -242,7 +217,7 @@ How do we move from one to the other?
 
 ----
 
-## Break out business features into microservices
+Break out business features into microservices
 
 Note:
 Choose a feature and break it out
@@ -263,7 +238,7 @@ Makes it difficult to evolve them independently
 
 ----
 
-## Add an API gateway
+Add an API gateway
 
 Note:
 If your application is client facing
@@ -280,7 +255,7 @@ Use a gateway to break the coupling between front and back
 
 ----
 
-### Add new business features as new microservices
+Add new business features as new microservices
 
 Note:
 New distinct features can be added as new microservices

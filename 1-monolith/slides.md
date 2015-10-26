@@ -10,30 +10,8 @@ This content is copyright of CloudCredo. © CloudCredo 2015. All rights reserved
 
 ----
 
-## Cloud Foundry
+12 Factor Apps
 
-* A platform for running your code
-* Handles servers and networking so you don't have to
-* And much more
-
-Note:
-platform for running applications
-
-It takes care of heavy lifting
-
-Think about deploying an app without a platform 
-
-Provision server, networking, load balancing, security
-
-In this talk we'll show you how to use it
-
-Hands on
-
-What is a 'Cloud Native' app?
-
-----
-
-## 12 Factor Apps
 (cloud native architecture)
 
 http://12factor.net
@@ -51,7 +29,8 @@ Throughout workshop we'll demonstrate some of the principles
 
 ----
 
-## Stateless Processes
+Stateless Processes
+
 Note:
 Don't let any app you run in the cloud be special
 
@@ -67,7 +46,8 @@ be prepared to scale up and down
 
 ----
 
-## Inject Everything
+Inject Everything
+
 Note:
 Don't bake any config into your apps
 
@@ -83,20 +63,31 @@ let the system provide a port to listen on - enables routing to / load balancing
 
 ----
 
-## Cloud Foundry
+Cloud Foundry
 
 Note:
 Using Cloud Foundry not Heroku
 
 12 Factors absolutely apply
 
-Really quick overview before we start pushing apps
+platform for running applications
+
+It takes care of heavy lifting
+
+Think about deploying an app without a platform 
+
+Provision server, networking, load balancing, security
+
+In this talk we'll show you how to use it
+
+Hands on
 
 How do we go from code to running app?
 
 ----
 
-## Buildpacks
+Buildpacks
+
 * Got code?
 * Just push it!
 * Let buildpacks figure out the rest
@@ -113,7 +104,8 @@ Exotic? Create your own custom buildpack
 
 ----
 
-## Orgs and Spaces
+Orgs and Spaces
+
 Note:
 Where does your app end up?
 

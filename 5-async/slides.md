@@ -30,7 +30,7 @@ Works because we know messages will be picked up *eventually*
 
 ----
 
-## Message Brokers
+Message Brokers
 
 Note:
 When we post a message, where does it go?
@@ -49,7 +49,8 @@ There are really two main types of channel
 
 ----
 
-## Queues
+Queues
+
 (point-to-point)
 
 Note:
@@ -77,7 +78,8 @@ Same queue, instant load balancer
 
 ----
 
-## Topics
+Topics
+
 (publish-subscribe - 'pub-sub')
 
 Note:
@@ -97,7 +99,7 @@ If all subscribers *need to know* about a message, then topics are ideal.
 
 ----
 
-## Call me maybe...?
+Call me maybe...?
 
 Note:
 Sometimes we really don't care if we never get a reply back to our messages
@@ -114,7 +116,7 @@ Or can specify reply channel as part of request message
 
 ----
 
-## Resilience
+Resilience
 
 Note:
 Why is async messaging useful in a microservice architecture?
@@ -131,7 +133,7 @@ Consumer can die, come back again, resume from where it left off
 
 ----
 
-## Shock Absorption
+Shock Absorption
 
 Note:
 Microservice architectures often need to deal with unpredictable load

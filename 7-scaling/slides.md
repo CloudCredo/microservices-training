@@ -15,7 +15,8 @@ We're going to look at two ways this can be done
 
 ----
 
-## Vertical Scaling
+Vertical Scaling
+
 ('scaling up')
 
 Note:
@@ -37,7 +38,8 @@ Necessary downtime - app must be restarted
 
 ----
 
-## Horizontal Scaling
+Horizontal Scaling
+
 ('scaling out')
 
 Note:
@@ -61,7 +63,8 @@ Design for this, then scaling becomes super easy
 
 ----
 
-## Scaling Monoliths
+Scaling Monoliths
+
 (is hard)
 
 Note:
@@ -79,7 +82,8 @@ Inefficient
 
 ----
 
-## Scaling Microservices
+Scaling Microservices
+
 (is easy)
 
 Note:
@@ -91,7 +95,7 @@ If your web service becomes a bottleneck... scale just that
 
 ----
 
-## Scaling on Cloud Foundry
+Scaling on Cloud Foundry
 
 Note:
 Cloud Foundry supports both vertical and horizontal scaling
@@ -106,9 +110,9 @@ You can also tell Cloud Foundry how many instances of each app to create
 
 ----
 
-## CF Vertical Scaling
+CF Vertical Scaling
 
-`cf scale -k <required disk>[M|G] -m <required memory>[M|G]`
+`cf scale <your app> -k <required disk>[M|G] -m <required memory>[M|G]`
 
 Note:
 To vertically scale your app, increase the memory or disk limits
@@ -117,9 +121,9 @@ Specify on push or in manifest
 
 ----
 
-## CF Horizontal Scaling
+CF Horizontal Scaling
 
-`cf scale -i <number of instances>`
+`cf scale <your app> -i <number of instances>`
 
 Note:
 To horizontally scale your app, increase the number of app instances
