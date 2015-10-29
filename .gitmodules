@@ -1,27 +1,27 @@
 [submodule "1-monolith/app"]
-	path = 1-monolith/app
-	url = git@github.com:CloudCredo/1-monolith.git
+        path = 1-monolith/app
+        url = https://github.com:CloudCredo/1-monolith.git
 [submodule "2-application-state/app"]
-	path = 2-application-state/app
-	url = git@github.com:CloudCredo/2-application-state.git
+        path = 2-application-state/app
+        url = https://github.com:CloudCredo/2-application-state.git
 [submodule "3-microservices/app"]
-	path = 3-microservices/app
-	url = git@github.com:CloudCredo/3-microservices.git
+        path = 3-microservices/app
+        url = https://github.com:CloudCredo/3-microservices.git
 [submodule "4-distributed-tracing/app"]
-	path = 4-distributed-tracing/app
-	url = git@github.com:CloudCredo/4-distributed-tracing.git
+        path = 4-distributed-tracing/app
+        url = https://github.com:CloudCredo/4-distributed-tracing.git
 [submodule "5-async/app"]
-	path = 5-async/app
-	url = git@github.com:CloudCredo/5-async.git
+        path = 5-async/app
+        url = https://github.com:CloudCredo/5-async.git
 [submodule "6-blue-green/app"]
-	path = 6-blue-green/app
-	url = git@github.com:CloudCredo/6-blue-green.git
+        path = 6-blue-green/app
+        url = https://github.com:CloudCredo/6-blue-green.git
 [submodule "7-scaling/app"]
-	path = 7-scaling/app
-	url = git@github.com:CloudCredo/7-scaling.git
+        path = 7-scaling/app
+        url = https://github.com:CloudCredo/7-scaling.git
 [submodule "8-circuit-breaker/app"]
-	path = 8-circuit-breaker/app
-	url = git@github.com:CloudCredo/8-circuit-breaker.git
+        path = 8-circuit-breaker/app
+        url = https://github.com:CloudCredo/8-circuit-breaker.git
 [submodule "8-circuit-breaker/hystrix-dashboard"]
-	path = 8-circuit-breaker/hystrix-dashboard
-	url = git@github.com:spring-cloud-samples/hystrix-dashboard.git
+        path = 8-circuit-breaker/hystrix-dashboard
+        url = https://github.com:spring-cloud-samples/hystrix-dashboard.git
