@@ -79,25 +79,26 @@ after another. To push just one app from the manifest, run `cf push <app name> -
 Check out all the available buildpacks:
 
     cf buildpacks
-    
-Lots of supported languages to play with!    
-    
-----    
+
+Lots of supported languages to play with!
+
+----
 
 ## Cloud Foundry Introduction bonus task!
 
 Write and push an application using a supported buildpack that prints its environment variables to stdout.
 See what Cloud Foundry gives you by default.
 
-    cf push [your app name] -i 128M
+    cf push [your app name] --random-route -m 128M
     cf logs --recent [your app name]
 
 or for JVM languages
 
-    cf push [your app name] -p [path/to/your-executable-jar.jar] -i 128M
+    cf push [your app name] -p [path/to/your-executable-jar.jar] --random-route -m 128M
 
-Tip: We're using `-i 128M` to tell Cloud Foundry to allocate 128Mb of RAM to your app. Maybe
-you'll need more or less, so feel free to choose a more suitable value.
+Tip: We're using `-m 128M` to tell Cloud Foundry to allocate 128Mb of RAM to your app.
+Maybe you'll need more or less, so feel free to choose a more suitable value. We're also
+using `--random-route` to make sure your app doesn't collide with any other that happens to have the same name.
 
 ----
 

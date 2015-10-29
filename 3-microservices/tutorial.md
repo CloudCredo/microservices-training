@@ -85,8 +85,8 @@ Write and push a new microservice using a supported buildpack
 
 1. Make it listen on the port number injected by Cloud Foundry via the PORT environment variable
 2. Make it respond to HTTP GET requests on `/my-microservice`
-3. Use `cf push -m 128M --random-route` when you push your microservice to make sure it doesn't
-use too much memory and doesn't collide with any other app routes
+3. Use `cf push <your app name> -m 128M --random-route` when you push your microservice to make sure
+   it doesn't use too much memory and doesn't collide with any other app routes
 4. Set the `MY_MICROSERVICE_URL` env var of the feedback app
 
     `cf set-env feedback MY_MICROSERVICE_URL http://<your app url>`

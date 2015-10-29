@@ -1,19 +1,20 @@
 ## App Version 7
 ### Scaling
 
-We're going to push a new version of our feedback application to Cloud Foundry
+We're going to push a new version of our feedback application to Cloud Foundry.
 
-This version has a new feature - it displays the amount of traffic being received by each of our asynchronous workers
+This version has a new feature - it displays the amount of traffic being received by each of our
+asynchronous workers.
 
 Then we can scale our workers and handle more load!
 
 ## Push to Cloud Foundry
 
+Let's push our apps to Cloud Foundry to prove that it works:
+
     cf push -f app/manifest.yml
 
     cf apps
-
-Let's push our apps to Cloud Foundry to prove that it works
 
 ----
 
