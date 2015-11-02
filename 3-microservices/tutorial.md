@@ -23,6 +23,13 @@ So we're going to show you an alternative way to connect your Cloud Foundry
 apps to a service - by creating a 'user provided' service to inject the
 Redis connection details into the apps.
 
+First of all you'll need the Redis URL. Please visit [this
+link](http://bit.ly/1RnJmUe) in your browser and you should see a long URL that
+starts with `redis://`. Paste this URL in wherever you see `<redis url>`
+throughout the rest of today's tutorials.
+
+Now let's reconfigure redis:
+
     cf unbind-service feedback feedback-redis
 
     cf delete-service feedback-redis
